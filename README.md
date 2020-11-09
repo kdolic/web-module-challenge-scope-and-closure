@@ -43,6 +43,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+- Closure gives the developer the ability to put functions together and nest them within. Allows access to a function from a parent level scope in a child level scope. 
+
 2. Study the following code, then answer the questions below.
 
 ```js

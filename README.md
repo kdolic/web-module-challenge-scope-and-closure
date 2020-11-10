@@ -61,14 +61,21 @@ const dansRoll = personalDice("Dan");
 
 const zoesRoll = personalDice("Zoe");
 
-
 dansRoll();
 dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+- Closure is used with the nested return function inside of the personalDice(name) function. With the console log using the name parameter from the parent function. I can tell through the parent level scope with a child level scope inside.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+- Each roll is random number between 0 and 5, the console log is the same message with different a different newRoll ranging 0 to 5
+
 c. What is the lexical scope of `newRoll`? 
+
+- newRoll is declared in the nested function within the personalDice function.
 
 ### Task 2c - Exit Ticket
 

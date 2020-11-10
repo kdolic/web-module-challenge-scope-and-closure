@@ -75,13 +75,13 @@ b. Compare and contrast calling `dansRoll` the first and second time. What is al
 
 c. What is the lexical scope of `newRoll`? 
 
-- newRoll is declared in the nested function within the personalDice function.
+- newRoll is declared in the nested function within the personalDice function. It will look into its own function and see if it is available.
 
 ### Task 2c - Exit Ticket
 
 Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/WjSzNh9gDrD8Xn8hw/enY3yPRP3nEm7E).
 
-The completion of these questions is mandatory for MVP. However, passing the quiz doesn't affect your standing as a Lambda School student whatsoever. This is Lambda School testing itself! Please answer honestly and to the best of your ability without using external references.
+The completion of these questions is mandatory for MVP. However, passing the quiz doesn't affect your standing as a Lambda School student whatsoever. This is Lambda School testing itself! Please answer honestly and to the best of your ability without using external references. - DONE
 
 ### Task 3 - Stretch Goals
 

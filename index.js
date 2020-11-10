@@ -70,7 +70,7 @@ Use the inning function below to do the following:
 */
 
 function inning(score){
-  return Math.floor(Math.random() * Math.floor(2));
+  return Math.floor(Math.random() * (3));
 }
 
 /* Task 3: finalScore()
@@ -160,16 +160,18 @@ function scoreboard(getInningScore, inningCB, numInning) {
   let score = {
     Home: 0,
     Away: 0
-  }
+  };
 
   for(let i = 0; i < numInning; i++){
     const currentScore = getInningScore(inningCB);
     score.Home += currentScore.Home;
-    score.Away = currentScore.Away;
+    score.Away += currentScore.Away;
     totalScore.push(`Inning ${i + 1}: Away ${score.Away} - Home ${score.Home}`);
   }
   if(score.Home === score.Away){
-    return (`This game will require extra innings: Away ${score.Away} - Home ${score.Home}`);
+    totalScore.push(`This game will require extra innings: Away ${score.Away} - Home ${score.Home}`);
+  } else {
+    totalScore.push(`Final Score: Away ${score.Away} - Home ${score.Home}`);
   }
 
   return totalScore;
